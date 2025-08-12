@@ -19,6 +19,7 @@ class Player():
 
     def update(self, delta: float, source_surface: pg.surface.Surface):
         source_surface.blit(self.image, self.position)
+        self._handle_input()
         self._move(delta)
         
     
@@ -31,7 +32,6 @@ class Player():
     
 
     def _move(self, delta):
-        self._handle_input()
         self.velocity = self.direction * self._SPEED * delta
         acceleration_factor = self.velocity * self._ACCELERATION * input.Input.is_action_pressed("ACCELERATE")
 
