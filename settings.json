@@ -1,0 +1,16 @@
+{
+    "display_parameters":
+    {
+        "WIDTH" : 1920,
+        "HEIGHT" : 1080,
+        "VSYNC" : true,
+        "FPS" : 180
+    },
+    "controls" : {
+        "MOVE_RIGHT" : ["d", "right"],
+        "MOVE_LEFT" : ["a", "left"],
+        "MOVE_UP" : ["w", "up"],
+        "MOVE_DOWN" : ["s", "down"],
+        "ACCELERATE" : ["left shift"]
+    }
+}
