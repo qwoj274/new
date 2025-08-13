@@ -92,7 +92,7 @@ class Input(ABC):
         if action_name in ACTIONS:
             return ACTIONS[action_name]
         else:
-            return None
+            return Action.EMPTY
 
     
     def add_key(self, action_name: str, key: int):
