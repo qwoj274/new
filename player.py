@@ -22,7 +22,6 @@ class Player():
         self._handle_input()
         self._move(delta)
         
-    
 
     def _handle_input(self):
         self.direction = input.Input.get_axis(
@@ -36,6 +35,7 @@ class Player():
         acceleration_factor = self.velocity * self._ACCELERATION * input.Input.is_action_pressed("ACCELERATE")
 
         self.position += self.velocity + acceleration_factor
+
 
 
 if __name__ == "__main__":

@@ -47,6 +47,12 @@ class Utils:
             min if min>value else
             max
         )
+    
+    @staticmethod
+    def fixed_normalize(vec: Vector2) -> Vector2:
+        if vec.magnitude() == 0:
+            return vec
+        return Vector2.normalize(vec)
 
 
 class Colors:

@@ -83,9 +83,7 @@ class Input(ABC):
         axis_vector = pg.Vector2(0, 0)
         axis_vector.x = x[0] - x[1]
         axis_vector.y = y[0] - y[1]
-        if Utils.parse_bool(axis_vector.length):
-            return pg.Vector2.normalize(axis_vector)
-        return axis_vector
+        return Utils.fixed_normalize(axis_vector)
 
 
     def get_action(self, action_name) -> Action:
